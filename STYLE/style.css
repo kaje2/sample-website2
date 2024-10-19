@@ -39,6 +39,7 @@ header{
     background-image: url("satoro.png"); 
     background-repeat: no-repeat;
     background-size: 100% 100%;
+    flex-direction: column;
 }
 .banner-button{
     display: block;
@@ -50,4 +51,54 @@ header{
 }
 .banner h1{
     color: aliceblue;
+}
+.content{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2em;
+    gap: 20px;
+}
+.card {
+    max-width:33.33%;
+    background-color: aliceblue;
+    flex: 1;
+}
+.card img {
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    max-width: 100%;
+}
+.card-content {
+padding: 1em;
+}
+.card-content a {
+    display: block;
+    background-color: black;
+    padding: 1em;
+    text-align: center;
+    color: rgb(21, 22, 22);
+    text-decoration: none;
+    border-radius: 5px;
+}
+.main-footer {
+    background-color: azure;
+    min-height: 12em;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1em;
+}
+.social a {
+    color: aqua;
+    text-decoration: none;
+    font-size: 1.5em;
+}
+.social {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
 }
