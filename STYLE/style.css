@@ -18,7 +18,9 @@ header{
     width: 30px;
 }
 .main-navigation {
-    background-color:ghostwhite
+    background-color:ghostwhite;
+    display: flex;
+    flex-direction: row;
 }
 .main-navigation a {
     color:rgba(51, 18, 197, 0.753);
@@ -29,6 +31,32 @@ header{
 .main-navigation a:hover {
     background-color: rgba(241, 2, 2, 0.767);
     padding: 13px;
+}
+.dropdown-menu{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    background-color: black;
+    max-height: 0px;
+    overflow: hidden;
+    transition: max-height 0.5s ;
+}
+.dropdown-menu a {
+    white-space: nowrap;
+    color: white;
+}
+.dropdown{
+    position: relative;
+}
+.dropdown:hover > .dropdown-menu {
+    max-height: 50vh;
+}
+.dropdown > a::after{
+    content: "\25bc";
+    margin-left: 1em;
+    font-size: 0.5em;
+
 }
 .banner {
     min-height: 50vh;
